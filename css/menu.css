@@ -1,0 +1,86 @@
+.nav {
+	width: 35px;
+}
+.nav ul {
+	float:left;
+	max-width: 1240px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 1.5em;
+	font-weight: 300;
+}
+
+.nav li span {
+	display: block;
+}
+
+.nav a {
+	display: block;
+	color: rgba(249, 249, 249, .9);
+	text-decoration: none;
+	transition: color .5s, background .5s, height .5s;
+}
+
+
+/* Adding some background color to the different menu items */
+
+
+.nav li {
+	background: rgb(27, 54, 71);
+}
+
+
+.nav ul li img{
+	width: 35px;
+    margin-top: 20px;
+}
+
+.innercontainer2 .nav .active a {
+	background: rgb(245, 130, 32);
+}
+
+
+@media (min-width: 20em) {
+
+	
+	.nav li {
+		/*float: left;
+		width: 16.66666666666667%;*/
+		text-align: center;
+		-webkit-transition: border .5s;
+		-moz-transition: border .5s;
+		-o-transition: border .5s;
+		-ms-transition: border .5s;
+		transition: border .5s;
+	}
+
+	.nav a {
+		display: block;
+		width: auto;
+	}
+
+	
+
+	/* Placing the icon */
+	
+	.icon {
+		padding-top: 0.4em;
+	}
+
+	.icon + span {
+		margin-top: 0.1em;
+	}
+
+	/* Animating the height of the element*/
+	.nav a {
+		height: 5em;
+	}
+
+	.no-touch .nav a:hover ,
+	.nav a:active ,
+	.nav a:focus {
+		height: 6em;
+	}	
+		
+}
