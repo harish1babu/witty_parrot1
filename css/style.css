@@ -16,6 +16,10 @@ body {
     margin: -5px;
 }
 
+.menu{
+		display: none;
+	}
+
 *, *:after, *:before { 
 	-webkit-box-sizing: border-box; 
 	-moz-box-sizing: border-box; 
@@ -34,6 +38,7 @@ a:hover {
 .container {
 	border-bottom: 4px solid rgb(221, 221, 221);
 	overflow: hidden;
+	min-width: 350px;
 }
 
 .innercontainer1{
@@ -116,6 +121,11 @@ a:hover {
 	width: 35px;
 }
 
+.mail{
+	float: left;
+	margin: 0 25px;
+}
+
 @media (min-width: 1160px){
 .innercontainer2 {
     width: 1300px;
@@ -125,6 +135,10 @@ a:hover {
 
 
 /*-------------------------------------------------------- STRUCTURE */
+
+.section{
+
+}
 
 #pagewrap {
 	float: left;
@@ -136,12 +150,14 @@ a:hover {
 header {
 	height: 150px;
 	padding: 0 15px;
+	background: #fff;
+	margin: 0 7px;
 }
 #content {
 	width: 325px;
 	float: left;
 	padding: 5px 15px;
-	margin: 0px 5px 5px 5px;
+	margin: 0px 7px 5px 6px;
 }
 
 #content img{
@@ -193,6 +209,14 @@ footer {
 		/*width: 330px;*/
 		height:200px;
 	}
+
+	.menu{
+		display: none;
+	}
+
+	#content1{
+		float: right;
+	}
 }
 
 @media screen and (max-width: 930px) {
@@ -204,7 +228,7 @@ footer {
 
 
 
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 830px) {
 
 	#pagewrap {
 		width: 73%;
@@ -226,6 +250,39 @@ footer {
 		float: none;
 	}
 
+	#content {
+    width: 95%;
+    float: left;
+    padding: 5px 15px;
+    margin: 0px 5px 5px 5px;
+}
+
+}
+
+@media screen and (max-width: 550px) {
+
+	#pagewrap {
+		width: 93%;
+	}
+	
+	.logo {
+		width: 150px;
+	}
+
+	.nav{
+		display: none;
+	}
+
+	.menu{
+		display: inherit;
+	}
+
+	#content {
+    width: 95%;
+    float: left;
+    padding: 5px 15px;
+    margin: 0px 5px 5px 5px;
+}
 }
 
 @media screen and (max-width: 450px) {
@@ -253,17 +310,10 @@ footer {
 
 }
 
-@media screen and (max-width: 550px) {
-	
-	.logo {
-		width: 150px;
-	}
 
-	.menu
-}
 
 #content {
-	background: #f8f8f8;
+	background: #fff;
 }
 #sidebar {
 	margin: 0px 5px 5px 5px;
